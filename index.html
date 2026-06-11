@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Unity Web Player | Hanoi 1926</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width: 100vw; height: 100vh;  tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,12 +53,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/1926-test.loader.js";
+      var loaderUrl = buildUrl + "/1926 WebGL.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/1926-test.data.unityweb",
-        frameworkUrl: buildUrl + "/1926-test.framework.js.unityweb",
-        codeUrl: buildUrl + "/1926-test.wasm.unityweb",
+        dataUrl: buildUrl + "/1926 WebGL.data.unityweb",
+        frameworkUrl: buildUrl + "/1926 WebGL.framework.js.unityweb",
+        codeUrl: buildUrl + "/1926 WebGL.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "IRD - Across",
         productName: "Hanoi 1926",
