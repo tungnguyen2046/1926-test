@@ -53,12 +53,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/1926 WebGL.loader.js";
+      var loaderUrl = buildUrl + "/1926-test.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/1926 WebGL.data.unityweb",
-        frameworkUrl: buildUrl + "/1926 WebGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/1926 WebGL.wasm.unityweb",
+        dataUrl: buildUrl + "/1926-test.data.unityweb",
+        frameworkUrl: buildUrl + "/1926-test.framework.js.unityweb",
+        codeUrl: buildUrl + "/1926-test.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "IRD - Across",
         productName: "Hanoi 1926",
@@ -70,6 +70,8 @@
         //    // to process it further, 'false' otherwise.
         //    return true;
         // },
+        devicePixelRatio: 1,
+        matchWebGLToCanvasSize: true,
       };
 
       // By default, Unity keeps WebGL canvas render target size matched with
